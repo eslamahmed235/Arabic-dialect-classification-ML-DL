@@ -22,7 +22,7 @@ pipeline with the following steps from starting from git data set with Post requ
 ##  2. DATA PRE-PROCESSING
 
 In Data PRE-PROCESSING We have Two choice: 
- - Apply pre-processing and cleaning manually Using ex. Regex, NLTK, word iterations and Apply pre trained models and packages for preprocessing Using ex. Arabert, merbert, and Camel.
+ Apply pre-processing and cleaning manually Using ex. Regex, NLTK, word iterations and Apply pre trained models and packages for preprocessing Using ex. Arabert, merbert, and Camel.
  I Decision to go throw manually pre-processing with Machine learning Model with the Following steps: 
  1. clean Hashtag and mention  { #, @ }
  2. remove emoji 😀
@@ -33,7 +33,7 @@ In Data PRE-PROCESSING We have Two choice:
  7. Split words with “ + ” sign { " + "}
 ![Tweet before and After manually pre-processing](https://github.com/eslamahmed235/Arabic-dialect-classification-ML-DL/blob/main/doc/Picture1.png)
 
-with Deeplearing Model I decided to use [** Arabert  v2**](https://github.com/aub-mind/arabert) 
+with Deeplearing Model I decided to select Auto pre-processing and Tokenizer using  [** Arabert  v2**](https://github.com/aub-mind/arabert) 
 
 1. Choose **Arabert V2**
 2. Select ***AraBERTv0.2-Twitter-base*** Model
