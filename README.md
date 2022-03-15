@@ -1,12 +1,12 @@
 # Arabic-dialect-classification-ML-DL
 
-This project is dedicated to build a classification pipeline to the problem of Arabic dialects identification, labels contain 18 clasess/dialects, using a classic ML and modern DL approaches.
+This project is dedicated to build a classification pipeline to the problem of Arabic dialects identification, labels contain 18 classes/dialects, using a classic ML and modern DL approaches.
 
 
 # Dataset
 
 The dataset and the dialect identification problem were addressed by Qatar Computing Research Institute, moreover, they published a paper, feel free to get more insights from it, [Arabic Dialect Identification paper](https://arxiv.org/pdf/2005.06557.pdf)
-![dialect distripution ](https://github.com/eslamahmed235/Arabic-dialect-classification-ML-DL/blob/main/doc/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f4671586f56787455305042716347366a5a334130435a716b4f414a4f696f7831497a612d4f5948654c63757869694659763369394357364e467576326c36317a307a6e6f655.png)
+![dialect distribution  ](https://github.com/eslamahmed235/Arabic-dialect-classification-ML-DL/blob/main/doc/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f4671586f56787455305042716347366a5a334130435a716b4f414a4f696f7831497a612d4f5948654c63757869694659763369394357364e467576326c36317a307a6e6f655.png)
 
 # pipeline 
 
@@ -15,7 +15,7 @@ pipeline with the following steps from starting from git data set with Post requ
 ##  1. DATA FETCHING
 
  - Load dialect Tweet ID file 
- - Create chunked List with fixed size 1000 recored
+ - Create chunked List with fixed size 1000 record
  - Create doc request with JSON as a list of IDs
  - Create API Post Request 5. Save output request response in csv file
 
@@ -41,7 +41,7 @@ with Deeplearing Model I decided to use [** Arabert  v2**](https://github.com/au
 ##  3. Machine learning Model
 
 In **feature transformation** After several Attempts  
-select to apply cominaation between two TfidfVectorizer for words and character.
+select to apply combination  between two TfidfVectorizer for words and character.
 In **Machine learning model** After several Attempts  
 Select apply ensembleing with **VotingClassifier** with  the following models: “SGDClassifier”, “LinearSVC”, “MultinomialNB”, and “BernoulliNB”
 ![ML_model classification report](https://github.com/eslamahmed235/Arabic-dialect-classification-ML-DL/blob/main/doc/Picture3.png)
